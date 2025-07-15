@@ -8,7 +8,7 @@ import {
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
-export const DoctorProfileSection = (): JSX.Element => {
+export const CoachListSection = (): JSX.Element => {
   // StarIcon rating data
   const stars = Array(4).fill(null);
 
