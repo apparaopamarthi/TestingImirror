@@ -1,7 +1,7 @@
 import { ArrowLeftIcon } from "lucide-react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../components/ui/button";
+import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { Modal } from "../../../components/ui/Modal"; // Corrected import path
 

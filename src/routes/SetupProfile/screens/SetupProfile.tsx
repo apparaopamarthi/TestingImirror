@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
-import { Input } from "../components/ui/input";
+import { Input } from "../../components/ui/input";
 
 export const SetupProfile = (): JSX.Element => {
   const navigate = useNavigate();
