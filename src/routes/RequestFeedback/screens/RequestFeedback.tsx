@@ -1,6 +1,10 @@
-import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
+import React from 'react';
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
+export default function RequestFeedback() {
+  return (
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Request Feedback</h1>
+      <p>Request feedback component content goes here.</p>
+    </div>
+  );
 }
