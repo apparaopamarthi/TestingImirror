@@ -1,54 +1,24 @@
-import React from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Enterotp, LoginSignup, SetupProfile, RequestFeedback, WhomToSend } from "./routes";
-import { Home } from "./screens/Home";
-import { IntroCarousel } from "./screens/IntroCarousel";
-import { SplashScreen } from "./screens/SplashScreen";
-import { Dashboard } from "./screens/Dashboard";
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <SplashScreen />,
-  },
-  {
-    path: "/splash",
-    element: <SplashScreen />,
-  },
-  {
-    path: "/intro",
-    element: <IntroCarousel />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-  },
-  {
-    path: "/login",
-    element: <LoginSignup />,
-  },
-  {
-    path: "/enterotp",
-    element: <Enterotp />,
-  },
-  {
-    path: "/setup-profile",
-    element: <SetupProfile />,
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
-  },
-  {
-    path: "/request-feedback",
-    element: <RequestFeedback />,
-  },
-  {
-    path: "/whom-to-send",
-    element: <WhomToSend />,
-  }
-]);
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
 
-export const App = () => {
-  return <RouterProvider router={router} />;
-};
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
