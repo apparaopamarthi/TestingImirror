@@ -129,17 +129,17 @@ export const IntroCarousel: React.FC = () => {
               className={`relative w-2 h-2 bg-black rounded-full cursor-pointer transition-opacity duration-300 ${index !== activeSlide ? "opacity-30" : ""}`}
               onClick={() => goToSlide(index)}
             />
-            ))}
-          </div>
+          ))}
         </div>
+      </div>
 
-        {/* Get Started Button */}
-        <Button 
-          className="w-[272px] h-[49px] absolute bottom-[120px] left-1/2 -translate-x-1/2 bg-[#74a4ee] rounded-[25px] text-white font-medium shadow-md hover:bg-[#5a8fd8] transition-colors"
-          onClick={handleGetStarted}
-        >
-          Get Started
-        </Button>
-    
+      {/* Get Started Button */}
+      <Button 
+        className="w-[272px] h-[49px] absolute bottom-[120px] left-1/2 -translate-x-1/2 bg-[#74a4ee] rounded-[25px] text-white font-medium shadow-md hover:bg-[#5a8fd8] transition-colors"
+        onClick={handleGetStarted}
+      >
+        Get Started
+      </Button>
+    </div>
   );
 };
