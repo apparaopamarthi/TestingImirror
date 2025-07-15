@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/SplashScreen/SplashScreen.tsx",
+      "label": "SplashScreen",
+      "routes": [
+        "/",
+        "/splash"
+      ],
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/IntroCarousel/IntroCarousel.tsx",
+      "label": "IntroCarousel",
+      "routes": [
+        "/intro"
+      ]
+    }
+  ],
+  "edges": []
+}
